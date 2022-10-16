@@ -7,3 +7,12 @@
   list-style-type: none;
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,14 @@
+%content-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+%flex {
+  display: flex;
+}
+
+%flex-between {
+  @extend %flex;
+  justify-content: space-between;
+  align-items: center;
+}
