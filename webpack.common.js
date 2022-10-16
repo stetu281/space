@@ -10,6 +10,18 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/html/index.html",
     }),
+    new HTMLWebpackPlugin({
+      template: "./src/html/destination.html",
+      filename: "destination.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/html/crew.html",
+      filename: "crew.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: "./src/html/technology.html",
+      filename: "technology.html",
+    }),
     new CleanWebpackPlugin(),
     new WebpackPrettierPlugin(),
   ],
