@@ -12,4 +12,8 @@ main {
 
 p {
   line-height: 25px;
+
+  @include breakpoint($m) {
+    line-height: 28px;
+  }
 }

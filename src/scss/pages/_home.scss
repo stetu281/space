@@ -14,6 +14,11 @@
     @extend %content-width;
   }
 
+  &__textContainer {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+
   &__title {
     font-family: $barlow-condensed;
     font-size: 1rem;
@@ -46,5 +51,26 @@
     font-size: 1.25rem;
     text-transform: uppercase;
     color: $dark-font;
+  }
+
+  @include breakpoint($m) {
+    background-image: url("../images/home/background-home-tablet.jpg");
+    min-height: 1000px;
+
+    &__title {
+      font-size: 1.25rem;
+      letter-spacing: 3.38px;
+
+      &--large {
+        font-size: 9.375rem;
+      }
+    }
+
+    &__btn {
+      margin-top: 9rem;
+      width: 242px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
   }
 }
