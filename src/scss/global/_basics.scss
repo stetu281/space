@@ -1,10 +1,15 @@
 body {
   font-size: 16px;
   font-family: $barlow;
+  color: $white;
 }
 
 main {
   width: 100%;
   height: 100vh;
   background-color: #110a20;
+}
+
+p {
+  line-height: 25px;
 }
