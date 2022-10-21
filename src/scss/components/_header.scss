@@ -12,7 +12,7 @@
 
   &__logo {
     width: 40px;
-    height: 40px;
+    aspect-ratio: 1 / 1;
   }
 
   &__hamburger {
@@ -21,5 +21,21 @@
 
   &__hamburgerIcon {
     pointer-events: none;
+  }
+
+  @include breakpoint($m) {
+    padding: unset;
+    height: 96px;
+
+    &__content {
+      height: 100%;
+    }
+    &__logo {
+      width: 48px;
+    }
+
+    &__hamburger {
+      display: none;
+    }
   }
 }
