@@ -57,7 +57,8 @@
           cursor: pointer;
         }
 
-        &:hover > a::after {
+        &:hover > a::after,
+        &.active > a::after {
           content: "";
           height: 3px;
           width: 100%;
@@ -74,6 +75,34 @@
 
         span {
           display: none;
+        }
+      }
+    }
+  }
+
+  @include breakpoint($l) {
+    transform: translateX(12%);
+
+    &::before {
+      content: "";
+      width: 60%;
+      height: 1px;
+      position: absolute;
+      left: -55%;
+      top: 50%;
+      background-color: rgba(white, 0.25);
+      backdrop-filter: blur(80px);
+    }
+
+    ul {
+      padding: 0 100px;
+      li {
+        margin: 0 25px;
+        a {
+          font-size: 1rem;
+          span {
+            display: inline-block;
+          }
         }
       }
     }

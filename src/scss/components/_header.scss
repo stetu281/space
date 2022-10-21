@@ -38,4 +38,8 @@
       display: none;
     }
   }
+
+  @include breakpoint($l) {
+    margin-top: 40px;
+  }
 }
