@@ -3,7 +3,6 @@
   height: 100vh;
   min-height: 650px;
   @extend %flex-center;
-  flex-direction: column;
   text-align: center;
   background-image: url("../images/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
@@ -12,6 +11,8 @@
   &__content {
     margin-top: 4rem;
     @extend %content-width;
+    @extend %flex-center;
+    flex-direction: column;
   }
 
   &__textContainer {
@@ -71,6 +72,31 @@
       width: 242px;
       font-size: 2rem;
       letter-spacing: 2px;
+    }
+  }
+
+  @include breakpoint($l) {
+    background-image: url("../images/home/background-home-desktop.jpg");
+    text-align: left;
+    min-height: 720px;
+
+    &__content {
+      margin-top: 15rem;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &__textContainer {
+      margin: unset;
+    }
+
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    &__btn {
+      margin-left: 5rem;
+      width: 274px;
     }
   }
 }
