@@ -23,11 +23,93 @@
     <main class="destpage">
       <div class="destpage__content">
         <h1 class="destpage__title"><span>01</span>Pick your destination</h1>
+        <div class="destpage__imgContainer">
+          <picture>
+            <source
+              type="image/png"
+              srcset="../images/destination/image-moon.png"
+            />
+            <source
+              type="image/webp"
+              srcset="../images/destination/image-moon.webp"
+            />
+            <img
+              src="../images/destination/image-moon.webp"
+              alt="Image of Planet"
+              data-id="0"
+              class="destpage__img destpage__img--show"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/png"
+              srcset="../images/destination/image-mars.png"
+            />
+            <source
+              type="image/webp"
+              srcset="../images/destination/image-mars.webp"
+            />
+            <img
+              src="../images/destination/image-mars.webp"
+              alt="Image of Planet"
+              data-id="1"
+              class="destpage__img"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/png"
+              srcset="../images/destination/image-europa.png"
+            />
+            <source
+              type="image/webp"
+              srcset="../images/destination/image-europa.webp"
+            />
+            <img
+              src="../images/destination/image-europa.webp"
+              alt="Image of Planet"
+              data-id="2"
+              class="destpage__img"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/png"
+              srcset="../images/destination/image-titan.png"
+            />
+            <source
+              type="image/webp"
+              srcset="../images/destination/image-titan.webp"
+            />
+            <img
+              src="../images/destination/image-titan.webp"
+              alt="Image of Planet"
+              data-id="3"
+              class="destpage__img"
+            />
+          </picture>
+        </div>
         <div class="destpage__btnContainer">
-          <button class="destpage__btn">Moon</button>
-          <button class="destpage__btn">Mars</button>
-          <button class="destpage__btn">Europe</button>
-          <button class="destpage__btn">Titan</button>
+          <button class="destpage__btn destpage__btn--active" data-id="0">
+            Moon
+          </button>
+          <button class="destpage__btn" data-id="1">Mars</button>
+          <button class="destpage__btn" data-id="2">Europe</button>
+          <button class="destpage__btn" data-id="3">Titan</button>
+        </div>
+        <div class="destpage__contentContainer">
+          <div class="destpage__text"></div>
+          <span class="destpage__divider"></span>
+          <div class="destpage__statsContainer">
+            <div class="destpage__stat">
+              <h3>Avg. distance</h3>
+              <p class="destpage__distText"></p>
+            </div>
+            <div class="destpage__stat">
+              <h3>Est. travel time</h3>
+              <p class="destpage__timeText"></p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

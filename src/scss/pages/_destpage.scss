@@ -4,6 +4,7 @@
   background-image: url("../images/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
 
   @include breakpoint($m) {
     background-image: url("../images/destination/background-destination-tablet.jpg");
@@ -16,6 +17,7 @@
 
 .destpage {
   text-align: center;
+  overflow-y: scroll;
 
   &__content {
     @extend %content-width;
@@ -34,6 +36,32 @@
     }
   }
 
+  &__imgContainer {
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    height: 170px;
+  }
+
+  &__img {
+    width: 170px;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    opacity: 0;
+
+    &--show {
+      left: 0;
+      right: 0;
+      opacity: 1;
+      margin: 0 auto;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  &__btnContainer {
+    margin-top: 1.625rem;
+  }
+
   &__btn {
     margin: 0 0.813rem;
     @extend %title-barlow-cond;
@@ -42,7 +70,8 @@
     letter-spacing: 2.36px;
     position: relative;
 
-    &:hover {
+    &:hover,
+    &--active {
       cursor: pointer;
       color: $white;
 
@@ -56,6 +85,45 @@
         left: 0;
         right: 0;
       }
+    }
+  }
+
+  &__text {
+    margin-top: 1.5rem;
+
+    h2 {
+      @extend %title-bellefair;
+      font-size: 3.5rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      color: $purple;
+    }
+  }
+
+  &__divider {
+    margin: 2rem auto 0 auto;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $dark-element;
+  }
+
+  &__stat {
+    margin: 2rem 0;
+
+    h3 {
+      @extend %title-barlow-cond;
+      font-size: 0.875rem;
+      letter-spacing: 2.36px;
+      color: $purple;
+    }
+
+    p {
+      margin-top: 0.75rem;
+      @extend %title-bellefair;
+      font-size: 1.75rem;
     }
   }
 }
