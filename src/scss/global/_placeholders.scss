@@ -5,16 +5,30 @@
 
 %flex {
   display: flex;
+  align-items: center;
 }
 
 %flex-center {
   @extend %flex;
   justify-content: center;
-  align-items: center;
 }
 
 %flex-between {
   @extend %flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+%title-basis {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+%title-bellefair {
+  @extend %title-basis;
+  font-family: $bellefair;
+}
+
+%title-barlow-cond {
+  @extend %title-basis;
+  font-family: $barlow-condensed;
 }

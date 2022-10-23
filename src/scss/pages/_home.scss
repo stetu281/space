@@ -21,12 +21,10 @@
   }
 
   &__title {
-    font-family: $barlow-condensed;
+    @extend %title-barlow-cond;
     font-size: 1rem;
-    font-weight: 400;
     color: $purple;
     letter-spacing: 2.7px;
-    text-transform: uppercase;
 
     &--large {
       display: block;
@@ -48,9 +46,8 @@
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     background-color: $white;
-    font-family: $bellefair;
+    @extend %title-bellefair;
     font-size: 1.25rem;
-    text-transform: uppercase;
     color: $dark-font;
   }
 
