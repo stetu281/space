@@ -1,9 +1,5 @@
 .header {
   padding: 1.5rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 
   &__content {
     @extend %content-width;
@@ -40,6 +36,10 @@
   }
 
   @include breakpoint($l) {
-    margin-top: 40px;
+    padding-top: 40px;
+
+    &__content {
+      height: 96px;
+    }
   }
 }
