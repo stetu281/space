@@ -134,6 +134,8 @@
   }
 
   @include breakpoint($l) {
+    text-align: left;
+
     &__bg {
       background-image: url("../images/crew/background-crew-desktop.jpg");
     }
@@ -142,6 +144,37 @@
       margin: 4.75rem 0 0 6.5rem;
       font-size: 1.75rem;
       letter-spacing: 4.72px;
+    }
+
+    &__container {
+      flex-direction: row;
+    }
+
+    &__textContainer {
+      margin: 9.625rem 0 0 6.5rem;
+      width: 50%;
+      max-width: unset;
+    }
+
+    &__h3 {
+      font-size: 2rem;
+    }
+
+    &__h2 {
+      font-size: 3.5rem;
+    }
+
+    &__p {
+      max-width: 450px;
+    }
+
+    &__nav {
+      margin-top: 7.5rem;
+    }
+
+    &__imgContainer {
+      margin-top: unset;
+      height: 610px;
     }
   }
 }
