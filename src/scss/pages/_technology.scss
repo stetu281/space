@@ -1,0 +1,44 @@
+.tecpage {
+  &__bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+  }
+
+  &__content {
+    @extend %content-width;
+  }
+
+  &__title {
+    @extend %page-breadcrumb;
+  }
+
+  @include breakpoint($m) {
+    &__bg {
+      background-image: url("../images/technology/background-technology-tablet.jpg");
+    }
+
+    &__title {
+      margin-top: 4.5rem;
+      text-align: left;
+      font-size: 1.25rem;
+      letter-spacing: 3.38px;
+    }
+  }
+
+  @include breakpoint($l) {
+    &__bg {
+      background-image: url("../images/technology/background-technology-desktop.jpg");
+    }
+
+    &__title {
+      margin: 4.75rem 0 0 6.5rem;
+      font-size: 1.75rem;
+      letter-spacing: 4.72px;
+    }
+  }
+}
