@@ -32,3 +32,15 @@
   @extend %title-basis;
   font-family: $barlow-condensed;
 }
+
+%page-breadcrumb {
+  @extend %title-barlow-cond;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+
+  span {
+    margin-right: 1rem;
+    color: rgba($white, 25%);
+    font-weight: 700;
+  }
+}
