@@ -50,7 +50,8 @@
   }
 
   &__textContainer {
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 460px;
   }
 
   &__btn {
@@ -94,6 +95,41 @@
       text-align: left;
       font-size: 1.25rem;
       letter-spacing: 3.38px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__imgContainer {
+      margin-top: 2.5rem;
+      order: 2;
+      height: 570px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__textContainer {
+      margin-top: 3.75rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__h3 {
+      margin-top: unset;
+      font-size: 1.5rem;
+    }
+
+    &__h2 {
+      font-size: 2.5rem;
+    }
+
+    &__nav {
+      margin-top: 2.5rem;
+      order: 2;
     }
   }
 
