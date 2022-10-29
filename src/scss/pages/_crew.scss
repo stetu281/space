@@ -62,8 +62,12 @@
     border-radius: 100%;
     opacity: 18%;
 
-    &--active {
-      opacity: 1;
+    &:hover {
+      opacity: 50%;
+    }
+
+    &[data-active="true"] {
+      opacity: 100%;
     }
   }
 
@@ -166,6 +170,7 @@
 
     &__p {
       max-width: 450px;
+      font-size: 1.125rem;
     }
 
     &__nav {
