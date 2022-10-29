@@ -1,23 +1,15 @@
-.destination-bg {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/destination/background-destination-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
-
-  @include breakpoint($m) {
-    background-image: url("../images/destination/background-destination-tablet.jpg");
-  }
-
-  @include breakpoint($l) {
-    background-image: url("../images/destination/background-destination-desktop.jpg");
-  }
-}
-
 .destpage {
   text-align: center;
+
+  &__bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+  }
 
   &__content {
     @extend %content-width;
@@ -120,6 +112,10 @@
   }
 
   @include breakpoint($m) {
+    &__bg {
+      background-image: url("../images/destination/background-destination-tablet.jpg");
+    }
+
     &__title {
       margin-top: 8.5rem;
       text-align: left;
@@ -155,6 +151,10 @@
   }
 
   @include breakpoint($l) {
+    &__bg {
+      background-image: url("../images/destination/background-destination-desktop.jpg");
+    }
+
     &__title {
       margin: 4.75rem 0 0 6.5rem;
       font-size: 1.75rem;
