@@ -59,7 +59,7 @@
         }
 
         &:hover > a::after,
-        &.active > a::after {
+        &[data-active="true"] > a::after {
           content: "";
           height: 3px;
           width: 100%;
@@ -72,6 +72,9 @@
 
         a {
           font-size: 0.875rem;
+          align-items: center;
+          display: inline-flex;
+          height: 100%;
         }
 
         span {
