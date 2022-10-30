@@ -1,10 +1,11 @@
 import css from "../scss/main.scss";
+import { hamburger } from "./components/hamburger";
+
 import { destination } from "./pages/destination";
 import { crew } from "./pages/crew";
 import { technology } from "./pages/technology";
 
-import closeIcon from "../images/shared/icon-close.svg";
-import hamburgerIcon from "../images/shared/icon-hamburger.svg";
+hamburger();
 
 //run code for specific pages
 if (document.body.id === "destination") {
@@ -14,16 +15,6 @@ if (document.body.id === "destination") {
 } else if (document.body.id === "technology") {
   technology();
 }
-
-document.querySelector(".header__hamburger").addEventListener("click", (e) => {
-  e.preventDefault();
-  e.target.nextElementSibling.classList.toggle("nav--open");
-  if (e.target.nextElementSibling.classList.contains("nav--open")) {
-    e.target.children[0].src = closeIcon;
-  } else {
-    e.target.children[0].src = hamburgerIcon;
-  }
-});
 
 window.onload = () => {
   let navItems = document.querySelectorAll(".navitem");
