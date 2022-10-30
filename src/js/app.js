@@ -1,20 +1,17 @@
 import css from "../scss/main.scss";
+import { destination } from "./pages/destination";
 import { crew } from "./pages/crew";
 import { technology } from "./pages/technology";
 
 import closeIcon from "../images/shared/icon-close.svg";
 import hamburgerIcon from "../images/shared/icon-hamburger.svg";
-import data from "../data/data.json" assert { type: "json" };
-import moonImg from "../images/destination/image-moon.png";
-import marsImg from "../images/destination/image-mars.png";
-import europaImg from "../images/destination/image-europa.png";
-import titanImg from "../images/destination/image-titan.png";
 
-if (document.body.id === "crew") {
+//run code for specific pages
+if (document.body.id === "destination") {
+  destination();
+} else if (document.body.id === "crew") {
   crew();
-}
-
-if (document.body.id === "technology") {
+} else if (document.body.id === "technology") {
   technology();
 }
 
