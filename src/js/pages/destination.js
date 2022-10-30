@@ -1,3 +1,5 @@
+import data from "../../data/data.json" assert { type: "json" };
+
 export const destination = () => {
   const btns = document.querySelectorAll(".destpage__btn");
   renderPlanet("0");
