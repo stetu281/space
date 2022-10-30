@@ -1,5 +1,6 @@
 import css from "../scss/main.scss";
 import { crew } from "./pages/crew";
+import { technology } from "./pages/technology";
 
 import closeIcon from "../images/shared/icon-close.svg";
 import hamburgerIcon from "../images/shared/icon-hamburger.svg";
@@ -11,6 +12,10 @@ import titanImg from "../images/destination/image-titan.png";
 
 if (document.body.id === "crew") {
   crew();
+}
+
+if (document.body.id === "technology") {
+  technology();
 }
 
 document.querySelector(".header__hamburger").addEventListener("click", (e) => {

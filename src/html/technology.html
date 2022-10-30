@@ -35,6 +35,8 @@
             <img
               src="../images/technology/image-launch-vehicle-landscape.jpg"
               alt="Launch Vehicle"
+              data-img="show"
+              data-imgid="0"
               class="tecpage__img tecpage__img--show"
             />
           </picture>
@@ -46,6 +48,8 @@
             <img
               src="../images/technology/image-spaceport-landscape.jpg"
               alt="Spaceport"
+              data-img="hide"
+              data-imgid="1"
               class="tecpage__img"
             />
           </picture>
@@ -57,15 +61,23 @@
             <img
               src="../images/technology/image-space-capsule-landscape.jpg"
               alt="Space Capsule"
+              data-img="hide"
+              data-imgid="2"
               class="tecpage__img"
             />
           </picture>
         </div>
         <div class="tecpage__content tecpage__flex">
           <div class="tecpage__nav">
-            <button class="tecpage__btn" data-active="true">1</button>
-            <button class="tecpage__btn" data-active="false">2</button>
-            <button class="tecpage__btn" data-active="false">3</button>
+            <button class="tecpage__btn" data-btnid="0" data-active="true">
+              1
+            </button>
+            <button class="tecpage__btn" data-btnid="1" data-active="false">
+              2
+            </button>
+            <button class="tecpage__btn" data-btnid="2" data-active="false">
+              3
+            </button>
           </div>
           <div class="tecpage__textContainer">
             <h3 class="tecpage__h3">The Terminology ...</h3>

@@ -34,7 +34,7 @@
     object-fit: cover;
     opacity: 0;
 
-    &--show {
+    &[data-img="show"] {
       opacity: 1;
     }
   }
@@ -173,7 +173,7 @@
     &__textContainer {
       margin: 0 0 0 5rem;
       padding-bottom: unset;
-      width: 50%;
+      width: 60%;
       max-width: 470px;
     }
 
