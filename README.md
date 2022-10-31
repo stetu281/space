@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://www.stefanturner.ch/projects/space/](https://www.stefanturner.ch/projects/space/)
+- Live Site URL: [https://stetu281.github.io/space/index.html](https://stetu281.github.io/space/index.html)
 
 ## My process
 
