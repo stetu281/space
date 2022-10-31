@@ -21,7 +21,16 @@ export const technology = () => {
 };
 
 function renderContent(id) {
+  document
+    .querySelector(".tecpage__textContainer")
+    .classList.remove("tecpage__textContainer--fadein");
   let tec = data.technology[id];
   document.querySelector(".tecpage__h2").textContent = tec.name;
   document.querySelector(".tecpage__p").textContent = tec.description;
+
+  setTimeout(() => {
+    document
+      .querySelector(".tecpage__textContainer")
+      .classList.add("tecpage__textContainer--fadein");
+  }, 100);
 }

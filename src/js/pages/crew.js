@@ -33,5 +33,5 @@ function renderContent(id) {
     document
       .querySelector(".crewpage__text")
       .classList.add("crewpage__text--fadein");
-  }, 200);
+  }, 100);
 }

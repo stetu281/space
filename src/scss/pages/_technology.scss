@@ -66,6 +66,13 @@
     margin: 1.5rem auto 0 auto;
     padding-bottom: 5rem;
     max-width: 458px;
+    opacity: 0;
+
+    &--fadein {
+      animation-name: fadeinright;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
   }
 
   &__h3 {
@@ -152,6 +159,13 @@
 
     &__img {
       width: 515px;
+      opacity: 0;
+
+      &[data-img="show"] {
+        animation-name: fadeinright;
+        animation-duration: 1.4s;
+        animation-fill-mode: forwards;
+      }
     }
 
     &__flex {
