@@ -45,13 +45,25 @@
     opacity: 0;
 
     &--show {
-      opacity: 1;
+      animation-name: fadeinright;
+      animation-duration: 1.3s;
+      animation-fill-mode: forwards;
     }
   }
 
   &__textContainer {
     margin: 2rem auto 0 auto;
     max-width: 460px;
+  }
+
+  &__text {
+    opacity: 0;
+
+    &--fadein {
+      animation-name: fadeinleft;
+      animation-duration: 1.3s;
+      animation-fill-mode: forwards;
+    }
   }
 
   &__btn {
@@ -179,7 +191,7 @@
 
     &__imgContainer {
       margin-top: unset;
-      height: 610px;
+      height: 750px;
     }
   }
 }

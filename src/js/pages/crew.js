@@ -4,6 +4,9 @@ export const crew = () => {
   document.querySelector(".crewpage__nav").addEventListener("click", (e) => {
     if (e.target && e.target.matches("button")) {
       document
+        .querySelector(".crewpage__text")
+        .classList.remove("crewpage__text--fadein");
+      document
         .querySelectorAll(".crewpage__btn")
         .forEach((item) => (item.dataset.active = "false"));
       e.target.dataset.active = "true";
@@ -25,4 +28,10 @@ function renderContent(id) {
   document.querySelector(".crewpage__h3").textContent = member.role;
   document.querySelector(".crewpage__h2").textContent = member.name;
   document.querySelector(".crewpage__p").textContent = member.bio;
+
+  setTimeout(() => {
+    document
+      .querySelector(".crewpage__text")
+      .classList.add("crewpage__text--fadein");
+  }, 200);
 }
